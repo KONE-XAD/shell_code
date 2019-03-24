@@ -3,7 +3,7 @@
 # Descri: check file size or dir size an files's num
 
 function dir_size(){
-    du -s $1 | awk '{print $1*1024*1024}'
+    du -s $1 | awk '{print $1*1024}'
 }
 
 function file_nums(){
