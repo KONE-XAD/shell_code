@@ -28,3 +28,6 @@ do
         continue
     fi
 done
+
+### Delete +15day bak file
+find ${Backup_Dir} -type f -name "*.dump.rdb" -mtime +15 | xargs rm -rf
